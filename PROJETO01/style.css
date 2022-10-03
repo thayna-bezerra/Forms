@@ -233,3 +233,8 @@ footer .button{
 footer .button:hover{
   background: #308d5a;
 }
+
+/*VALIDAÇÕES*/
+input:invalid{
+  border: 2px solid #FF1010;
+}
