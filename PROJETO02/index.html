@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agende sua Mentoria</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>MENTORIA</h1>
+    <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+  </header>
+
+  <form id="formulario">
+
+    <!--AGRUPAMENTO DE INFORMAÇÕES PESSOAIS-->
+      <fieldset>
+        <div class="fieldset-wrapper">
+            <legend>INFORMAÇÕES PESSOAIS</legend>
+
+          <div class="input-wrapper"> <!--Campo para Nome-->
+            <label for="first-name">Nome</label>
+            <input type="text" id="first-name"/>
+          </div>
+
+          <div class="input-wrapper"> <!--Campo para Sobrenome-->
+            <label for="last-name">Sobrenome</label>
+            <input type="text" id="last-name"/>
+          </div>
+
+          <div class="input-wrapper"> <!--Campo para email-->
+            <label for="email">Email <span>(digite um e-mail válido)</span></label>
+            <input type="email" id="email"/>
+          </div>
+
+          <div class="input-wrapper"> <!--Campo para senha-->
+            <label for="senha">Senha <span>(Mínimo de 6 caracteres)</span></label>
+            <input 
+            type="password" 
+            id="senha" 
+            required 
+            minlength="6"/>
+          </div>
+        </div>
+      </fieldset>
+
+      <!--AGRUPAMENTO DE INFORMAÇÕES DO MENTOR-->
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>INFORMAÇÕES DO MENTOR</legend>
+
+          <div class="input-wrapper"> <!--Campo para Nome do Mentor-->
+            <label for="first-name">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+            <input type="text" id="first-name"/>
+          </div>
+
+        </div>
+      </fieldset>
+
+      <!--AGRUPAMENTO PARA HORÁRIOS-->
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>SEUS HORÁRIOS DISPONÍVEIS</legend>
+
+          <h2>PRIMEIRA MENTORIA</h2>
+
+          <div class="input-wrapper"> <!--Campo para Data mentoria-->
+            <label for="data">Data <span>(DD/MM/AAAA)</span></label>
+            <input type="date" id="data"/>
+          </div>
+
+          <div class="input-wrapper"> <!--Campo para Horário-->
+            <label for="time">Das</label>
+            <input type="time" id="time"/>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="time">Até</label>
+            <input type="time" id="time"/>
+          </div>
+
+          <h2>SEGUNDA MENTORIA</h2>
+
+          <div class="input-wrapper"> <!--Campo para Data mentoria-->
+            <label for="data">Data <span>(DD/MM/AAAA)</span></label>
+            <input type="date" id="data"/>
+          </div>
+
+          <div class="input-wrapper"> <!--Campo para Horário-->
+            <label for="time">Das</label>
+            <input type="time" id="time"/>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="time">Até</label>
+            <input type="time" id="time"/>
+          </div>
+
+        </div>
+      </fieldset>
+      
+  </form>
+
+  <footer >
+    <input class= "button" 
+        type="submit" 
+        form="formulario"
+        value="SALVAR">
+  </footer>
+</body>
+</html>
