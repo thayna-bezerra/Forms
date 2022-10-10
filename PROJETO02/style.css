@@ -1,5 +1,3 @@
-/*font-family: 'Poppins', sans-serif;
-font-family: 'Staatliches', cursive;*/
 *{
   margin: 0;
   padding: 0;
@@ -52,7 +50,7 @@ header p{
 
 form {
   width: 750px;
-  height: 1084px; /* min-height: 300px; */
+  min-height: 300px; 
 
   background: #FFFFFF;
   border-radius: 20px 20px 0 0;
@@ -88,15 +86,100 @@ fieldset h2{
   font-weight: normal;
 }
 
-.input-wrapper label{
-  font-family: 'Poppins', sans-serif;
-  font-size: 14px;
- 
-  color: #4E4958;
-}
-
 .fieldset-wrapper{
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.input-wrapper {
+  display: flex; /*label fica em cima do input*/
+  flex-direction: column;
+}
+
+.input-wrapper label{
+  font-family: 'Poppins', sans-serif;
+  color: #4E4958;
+  font-size: 14px;
+ 
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+.input-wrapper label span {
+  color: #C1BCCC;
+  font-size: 12px;
+  line-height: 20px;
+
+  margin-left: 12px;
+
+}
+
+.input-wrapper label span:hover {
+  color: #686177;
+}
+
+.input-wrapper input, 
+.input-wrapper textarea{
+  font-family: 'Poppins', sans-serif;
+  color: #686177;
+  background: #FAFAFC;
+  
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+
+  height: 56px;
+  padding: 10px 24px; 
+  font-size: 16px;
+  
+  line-height: 26px;
+}
+
+/*COLOCANDO CAMPO AO LADO DO OUTRO*/
+.duas-colunas, .tres-colunas{
+  display: flex;
+  gap: 22px;
+}
+.duas-colunas, .tres-colunas > div:nth-child(1){ 
+  width: 300px;
+}
+.duas-colunas > div:nth-child(2){ 
+  width: 300px;
+}
+
+/*rodapé com botão*/
+footer {
+  background: #535971;
+  
+  height: 160px;
+  width: 750px;
+  
+  margin-bottom: 100px;
+
+  border-top: 1px solid #D6D6D6;
+  border-radius: 0 0 20px 20px;
+
+  padding: 50px 64px;
+}
+
+footer .button{
+  background: #FF5374;
+  width: 608px;
+  height: 56px;
+  
+  border: 0;
+  border-radius: 20px;
+
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+  color: #FFFFFF;
+  
+  line-height: 26px;
+}
+
+footer .button:hover{
+  background: #ff7893;
+}
+
+input:invalid{
+  border: 2px solid #FF1010;
 }

@@ -26,19 +26,21 @@
         <div class="fieldset-wrapper">
             <legend>INFORMAÇÕES PESSOAIS</legend>
 
-          <div class="input-wrapper"> <!--Campo para Nome-->
-            <label for="first-name">Nome</label>
-            <input type="text" id="first-name"/>
-          </div>
-
-          <div class="input-wrapper"> <!--Campo para Sobrenome-->
-            <label for="last-name">Sobrenome</label>
-            <input type="text" id="last-name"/>
+          <div class="duas-colunas"> <!--Para colocar um ao lado do outro-->
+            <div class="input-wrapper"> <!--Campo para Nome-->
+              <label for="first-name">Nome</label>
+              <input type="text" id="first-name" required/>
+            </div>
+  
+            <div class="input-wrapper"> <!--Campo para Sobrenome-->
+              <label for="last-name">Sobrenome</label>
+              <input type="text" id="last-name" required/>
+            </div>
           </div>
 
           <div class="input-wrapper"> <!--Campo para email-->
             <label for="email">Email <span>(digite um e-mail válido)</span></label>
-            <input type="email" id="email"/>
+            <input type="email" id="email" required/>
           </div>
 
           <div class="input-wrapper"> <!--Campo para senha-->
@@ -59,7 +61,7 @@
 
           <div class="input-wrapper"> <!--Campo para Nome do Mentor-->
             <label for="first-name">Nome do seu mentor <span>(só o primeiro nome)</span></label>
-            <input type="text" id="first-name"/>
+            <input type="text" id="first-name" required/>
           </div>
 
         </div>
@@ -72,36 +74,40 @@
 
           <h2>PRIMEIRA MENTORIA</h2>
 
-          <div class="input-wrapper"> <!--Campo para Data mentoria-->
-            <label for="data">Data <span>(DD/MM/AAAA)</span></label>
-            <input type="date" id="data"/>
-          </div>
-
-          <div class="input-wrapper"> <!--Campo para Horário-->
-            <label for="time">Das</label>
-            <input type="time" id="time"/>
-          </div>
-
-          <div class="input-wrapper">
-            <label for="time">Até</label>
-            <input type="time" id="time"/>
+          <div class="tres-colunas">
+            <div class="input-wrapper"> <!--Campo para Data mentoria-->
+              <label for="data">Data <span>(DD/MM/AAAA)</span></label>
+              <input type="date" id="data" required/>
+            </div>
+  
+            <div class="input-wrapper"> <!--Campo para Horário-->
+              <label for="time">Das</label>
+              <input type="time" id="time" required/>
+            </div>
+  
+            <div class="input-wrapper">
+              <label for="time">Até</label>
+              <input type="time" id="time" required/>
+            </div>
           </div>
 
           <h2>SEGUNDA MENTORIA</h2>
 
-          <div class="input-wrapper"> <!--Campo para Data mentoria-->
-            <label for="data">Data <span>(DD/MM/AAAA)</span></label>
-            <input type="date" id="data"/>
-          </div>
-
-          <div class="input-wrapper"> <!--Campo para Horário-->
-            <label for="time">Das</label>
-            <input type="time" id="time"/>
-          </div>
-
-          <div class="input-wrapper">
-            <label for="time">Até</label>
-            <input type="time" id="time"/>
+          <div class="tres-colunas">
+            <div class="input-wrapper"> <!--Campo para Data mentoria-->
+              <label for="data">Data <span>(DD/MM/AAAA)</span></label>
+              <input type="date" id="data" required/>
+            </div>
+  
+            <div class="input-wrapper"> <!--Campo para Horário-->
+              <label for="time">Das</label>
+              <input type="time" id="time" required/>
+            </div>
+  
+            <div class="input-wrapper">
+              <label for="time">Até</label>
+              <input type="time" id="time" required/>
+            </div>
           </div>
 
         </div>
