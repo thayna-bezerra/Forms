@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: #293241;
+  color: #FFFFFF;
+  width: 375px;
+  height: 332px;
+}
+
+header h1{
+  font-family: 'Staatliches', cursive;
+  font-weight: normal;
+  font-size: 32px;
+}
+
+header p{  
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+header div{
+  background-color: #F67669;  
+  width: 375px;
+  height: 133px;
+
+  display: flex;
+  flex-direction:row;
+}
+
+header div h1{
+  font-size: 24px;
+}
