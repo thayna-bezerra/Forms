@@ -33,4 +33,132 @@ header div{
 
 header div h1{
   font-size: 24px;
+  padding: 50px;
 }
+
+form {
+  min-height: 300px; 
+  background: #FFFFFF;
+  padding: 38px;
+  
+  display: flex;
+  flex-direction: column;
+
+  gap:32px;
+  
+  /*
+  border-radius: 20px 20px 0 0;
+  
+  
+  width: 750px;
+  */
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset legend {
+  font-family: 'Staatliches', cursive;
+  color: #253B51;  
+  
+  font-size: 24px;
+  line-height: 34px;
+  
+  width: 100%;
+
+  border-bottom: 1px solid #E6E6F0; /*Linha de separação abaixo do legend*/
+
+  padding-bottom: 16px;
+}
+
+.input-wrapper label{
+  font-family: 'Poppins', sans-serif;
+  color: #4E4958;
+  font-size: 14px;
+ 
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.fieldset-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-wrapper {
+  display: flex; /*label fica em cima do input*/
+  flex-direction: column;
+}
+
+.input-wrapper label{
+  font-family: 'Poppins', sans-serif;
+  color: #4E4958;
+  font-size: 14px;
+ 
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+  color: #C1BCCC;
+  font-size: 12px;
+  line-height: 20px;
+
+  margin-left: 12px;
+}
+
+.input-wrapper label span:hover {
+  color: #686177;
+}
+
+.input-wrapper input, 
+.input-wrapper textarea,
+.input-wrapper select{
+  font-family: 'Poppins', sans-serif;
+  color: #686177;
+  background: #FAFAFC;
+  
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+
+  height: 56px;
+  padding: 10px 24px; 
+  font-size: 16px;
+  
+  line-height: 26px;
+}
+
+.checkbox-wrapper {
+  font-family: 'Poppins', sans-serif;
+  color: #4E4958;
+  font-size: 14px;
+ 
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.checkbox-wrapper input:focus + label::before{
+  outline: 2px solid black;
+}
+
+button {
+  background: #F67669;
+  width: 300px;
+  height: 51px;
+  
+  border: 0;
+  border-radius: 20px;
+
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+  color: #FFFFFF;
+  
+  line-height: 26px;
+
+  margin-top: 40px;
+
+}
+
+/*MODELO FIGMA: https://www.figma.com/file/x2192rznsViiEjzmX5UQCb/Stage-03---Formulário-avançado-(Copy)?node-id=0%3A1*/
